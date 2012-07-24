@@ -24,6 +24,7 @@ namespace Rockmelon.Repository
                 Description = ""
             };
             gRepo.Save(g);
+            Assert.IsNotNull(g);
             Assert.IsTrue(g.GameId > 0);
         }
 
