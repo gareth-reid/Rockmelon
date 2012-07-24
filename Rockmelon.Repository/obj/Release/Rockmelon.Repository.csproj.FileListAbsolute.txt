@@ -1,0 +1,10 @@
+C:\GarDev\Rockmelon\Rockmelon.Repository\bin\Release\Rockmelon.Repository.dll.config
+C:\GarDev\Rockmelon\Rockmelon.Repository\bin\Release\Rockmelon.Repository.dll
+C:\GarDev\Rockmelon\Rockmelon.Repository\bin\Release\Rockmelon.Repository.pdb
+C:\GarDev\Rockmelon\Rockmelon.Repository\bin\Release\EntityFramework.dll
+C:\GarDev\Rockmelon\Rockmelon.Repository\bin\Release\Rockmelon.Domain.dll
+C:\GarDev\Rockmelon\Rockmelon.Repository\bin\Release\Rockmelon.Domain.pdb
+C:\GarDev\Rockmelon\Rockmelon.Repository\bin\Release\EntityFramework.xml
+C:\GarDev\Rockmelon\Rockmelon.Repository\obj\Release\ResolveAssemblyReference.cache
+C:\GarDev\Rockmelon\Rockmelon.Repository\obj\Release\Rockmelon.Repository.dll
+C:\GarDev\Rockmelon\Rockmelon.Repository\obj\Release\Rockmelon.Repository.pdb

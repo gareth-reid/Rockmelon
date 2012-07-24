@@ -1,0 +1,17 @@
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Rockmelon.Business.dll
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Rockmelon.Business.pdb
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Ninject.dll
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Rockmelon.Domain.dll
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Rockmelon.Factory.dll
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Rockmelon.Repository.dll
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\EntityFramework.dll
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Ninject.Extensions.Conventions.dll
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Rockmelon.Domain.pdb
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Rockmelon.Factory.pdb
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Rockmelon.Repository.pdb
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Ninject.pdb
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\Ninject.xml
+C:\GarDev\Rockmelon\Rockmelon.Business\bin\Release\EntityFramework.xml
+C:\GarDev\Rockmelon\Rockmelon.Business\obj\Release\ResolveAssemblyReference.cache
+C:\GarDev\Rockmelon\Rockmelon.Business\obj\Release\Rockmelon.Business.dll
+C:\GarDev\Rockmelon\Rockmelon.Business\obj\Release\Rockmelon.Business.pdb

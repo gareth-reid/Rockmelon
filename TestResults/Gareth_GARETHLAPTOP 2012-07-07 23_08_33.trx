@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bb6dcf66-0e23-4a9d-8632-38b55970b32c" name="Gareth@GARETHLAPTOP 2012-07-07 23:08:33" runUser="GARETHLAPTOP\Gareth" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="796624e8-7765-4176-801b-d3d64e5cbde9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Gareth_GARETHLAPTOP 2012-07-07 23_08_33">
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Domain\bin\Debug\Rockmelon.Domain.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Repository\bin\Debug\Rockmelon.Repository.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\packages\Moq.4.0.10827\lib\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Factory\bin\Debug\Rockmelon.Factory.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-07T23:08:33.0212500+10:00" queuing="2012-07-07T23:08:50.8025000+10:00" start="2012-07-07T23:08:51.0681250+10:00" finish="2012-07-07T23:10:05.4431250+10:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="GARETHLAPTOP" outcome="Error" timestamp="2012-07-07T23:10:05.4431250+10:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\dev\rockmelon\rockmelon.engine.tests\bin\debug\rockmelon.engine.tests.dll" id="97726bb9-d137-90b0-5c24-18750e556ad5">
+      <Execution id="3d490f66-c620-44bf-ba21-099b4d02c744" />
+      <TestMethod codeBase="C:/Dev/Rockmelon/Rockmelon.Engine.Tests/bin/Debug/Rockmelon.Engine.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Rockmelon.Engine.Tests.UnitTest1, Rockmelon.Engine.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="97726bb9-d137-90b0-5c24-18750e556ad5" executionId="3d490f66-c620-44bf-ba21-099b4d02c744" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3d490f66-c620-44bf-ba21-099b4d02c744" testId="97726bb9-d137-90b0-5c24-18750e556ad5" testName="TestMethod1" computerName="GARETHLAPTOP" duration="00:01:14.0937500" startTime="2012-07-07T23:08:51.3493750+10:00" endTime="2012-07-07T23:10:05.4431250+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d490f66-c620-44bf-ba21-099b4d02c744">
+    </UnitTestResult>
+  </Results>
+</TestRun>

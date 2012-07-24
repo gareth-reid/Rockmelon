@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8f26dd91-4aa7-4c2c-a077-e3153512de47" name="Gareth@GARETHLAPTOP 2012-07-07 22:56:37" runUser="GARETHLAPTOP\Gareth" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="796624e8-7765-4176-801b-d3d64e5cbde9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Gareth_GARETHLAPTOP 2012-07-07 22_56_37">
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Domain\bin\Debug\Rockmelon.Domain.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Repository\bin\Debug\Rockmelon.Repository.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\packages\Moq.4.0.10827\lib\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Factory\bin\Debug\Rockmelon.Factory.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-07T22:56:37.7868750+10:00" queuing="2012-07-07T22:56:39.6618750+10:00" start="2012-07-07T22:56:39.9118750+10:00" finish="2012-07-07T22:57:30.8493750+10:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\dev\rockmelon\rockmelon.engine.tests\bin\debug\rockmelon.engine.tests.dll" id="97726bb9-d137-90b0-5c24-18750e556ad5">
+      <Execution id="48d64033-8495-4747-bf5a-39f8785fd34b" />
+      <TestMethod codeBase="C:/Dev/Rockmelon/Rockmelon.Engine.Tests/bin/Debug/Rockmelon.Engine.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Rockmelon.Engine.Tests.UnitTest1, Rockmelon.Engine.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="97726bb9-d137-90b0-5c24-18750e556ad5" executionId="48d64033-8495-4747-bf5a-39f8785fd34b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="48d64033-8495-4747-bf5a-39f8785fd34b" testId="97726bb9-d137-90b0-5c24-18750e556ad5" testName="TestMethod1" computerName="GARETHLAPTOP" duration="00:00:49.2286131" startTime="2012-07-07T22:56:40.1462500+10:00" endTime="2012-07-07T22:57:30.3337500+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48d64033-8495-4747-bf5a-39f8785fd34b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Rockmelon.Engine.Tests.UnitTest1.TestMethod1 threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: bindingRoot</Message>
+          <StackTrace>    at Ninject.Extensions.Conventions.BindingBuilder.SingleConfigurationBindingCreator.CreateBindings(IBindingRoot bindingRoot, IEnumerable`1 serviceTypes, Type implementationType) in c:\Projects\Ninject\ninject.extensions.conventions\src\Ninject.Extensions.Conventions\BindingBuilder\SingleConfigurationBindingCreator.cs:line 50
+   at Ninject.Extensions.Conventions.BindingGenerators.AbstractInterfaceBindingGenerator.CreateBindings(Type type, IBindingRoot bindingRoot) in c:\Projects\Ninject\ninject.extensions.conventions\src\Ninject.Extensions.Conventions\BindingGenerators\AbstractInterfaceBindingGenerator.cs:line 80
+   at Ninject.Extensions.Conventions.BindingBuilder.ConventionBindingBuilder.BindWith(IBindingGenerator generator) in c:\Projects\Ninject\ninject.extensions.conventions\src\Ninject.Extensions.Conventions\BindingBuilder\ConventionBindingBuilder.cs:line 144
+   at Ninject.Extensions.Conventions.BindingBuilder.ConventionSyntax.BindWith(IBindingGenerator generator) in c:\Projects\Ninject\ninject.extensions.conventions\src\Ninject.Extensions.Conventions\BindingBuilder\ConventionSyntax.Bind.cs:line 57
+   at Ninject.Extensions.Conventions.BindingBuilder.ConventionSyntax.BindDefaultInterface() in c:\Projects\Ninject\ninject.extensions.conventions\src\Ninject.Extensions.Conventions\BindingBuilder\ConventionSyntax.Bind.cs:line 86
+   at Rockmelon.Factory.&lt;.ctor&gt;b__0(IFromSyntax x) in C:\Dev\Rockmelon\Rockmelon.Factory\Factory.cs:line 25
+   at Ninject.Extensions.Conventions.ExtensionsForIKernel.Bind(IBindingRoot kernel, Action`1 configure) in c:\Projects\Ninject\ninject.extensions.conventions\src\Ninject.Extensions.Conventions\Extensions\ExtensionsForIKernel.cs:line 59
+   at Rockmelon.Factory..ctor() in C:\Dev\Rockmelon\Rockmelon.Factory\Factory.cs:line 25
+   at Rockmelon.Engine.BaseUnitTest.Init() in C:\Dev\Rockmelon\Rockmelon.Engine.Tests\BaseUnitTest.cs:line 18
+   at Rockmelon.Engine.Tests.UnitTest1.TestMethod1() in C:\Dev\Rockmelon\Rockmelon.Engine.Tests\UnitTest1.cs:line 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

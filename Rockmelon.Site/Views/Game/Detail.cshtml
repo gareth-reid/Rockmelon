@@ -1,0 +1,23 @@
+﻿@using Rockmelon.Domain
+@model Rockmelon.Domain.Game
+@using (Ajax.BeginForm("Save", new AjaxOptions { HttpMethod = "Post" }))
+{
+    <div class="popup" id="detail-form">
+        @Html.HiddenFor(m => m.Title)
+        @Html.HiddenFor(m => m.GameId)
+        <div>
+            @Html.TextAreaFor(m => m.Description, 2, 50, new {})
+        </div>
+        <div>
+            @for (int i = 1; i < 6; i++)
+            {
+                <text>
+                    @i Stars: @Html.RadioButtonFor(m => m.RatingValue, i)
+                </text>
+            }
+        </div>
+        <div>
+            <input type="submit" value="Update"/>
+        </div>
+    </div>
+}

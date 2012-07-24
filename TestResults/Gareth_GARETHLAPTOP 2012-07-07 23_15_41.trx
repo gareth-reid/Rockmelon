@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ecda1033-b813-4353-9493-bf456bd00e06" name="Gareth@GARETHLAPTOP 2012-07-07 23:15:41" runUser="GARETHLAPTOP\Gareth" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="796624e8-7765-4176-801b-d3d64e5cbde9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Gareth_GARETHLAPTOP 2012-07-07 23_15_41">
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Domain\bin\Debug\Rockmelon.Domain.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Repository\bin\Debug\Rockmelon.Repository.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\packages\Moq.4.0.10827\lib\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\Rockmelon.Factory\bin\Debug\Rockmelon.Factory.dll" />
+      <DeploymentItem filename="C:\Dev\Rockmelon\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-07T23:15:41.0837500+10:00" queuing="2012-07-07T23:15:42.9900000+10:00" start="2012-07-07T23:15:43.2712500+10:00" finish="2012-07-07T23:16:35.8650000+10:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\dev\rockmelon\rockmelon.engine.tests\bin\debug\rockmelon.engine.tests.dll" id="97726bb9-d137-90b0-5c24-18750e556ad5">
+      <Execution id="b2bc5a72-7d89-4006-a9fb-aeccba96f7f1" />
+      <TestMethod codeBase="C:/Dev/Rockmelon/Rockmelon.Engine.Tests/bin/Debug/Rockmelon.Engine.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Rockmelon.Engine.Tests.UnitTest1, Rockmelon.Engine.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="97726bb9-d137-90b0-5c24-18750e556ad5" executionId="b2bc5a72-7d89-4006-a9fb-aeccba96f7f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b2bc5a72-7d89-4006-a9fb-aeccba96f7f1" testId="97726bb9-d137-90b0-5c24-18750e556ad5" testName="TestMethod1" computerName="GARETHLAPTOP" duration="00:00:50.9184720" startTime="2012-07-07T23:15:43.5056250+10:00" endTime="2012-07-07T23:16:35.3806250+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b2bc5a72-7d89-4006-a9fb-aeccba96f7f1">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Rockmelon.Engine.Tests.UnitTest1.TestMethod1 threw exception: 
+System.Data.ProviderIncompatibleException: An error occurred while getting provider information from the database. This can be caused by Entity Framework using an incorrect connection string. Check the inner exceptions for details and ensure that the connection string is correct. ---&gt; System.Data.ProviderIncompatibleException: The provider did not return a ProviderManifestToken string. ---&gt; System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.SqlClient.SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1 act)
+   at System.Data.SqlClient.SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1 act)
+   at System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)
+   at System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+ --- End of inner exception stack trace ---
+    at System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   at System.Data.Entity.ModelConfiguration.Utilities.DbProviderServicesExtensions.GetProviderManifestTokenChecked(DbProviderServices providerServices, DbConnection connection)
+ --- End of inner exception stack trace ---
+    at System.Data.Entity.ModelConfiguration.Utilities.DbProviderServicesExtensions.GetProviderManifestTokenChecked(DbProviderServices providerServices, DbConnection connection)
+   at System.Data.Entity.ModelConfiguration.Utilities.DbConnectionExtensions.GetProviderInfo(DbConnection connection, DbProviderManifest&amp; providerManifest)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.CreateObjectContextForDdlOps()
+   at System.Data.Entity.Database.Delete()
+   at Rockmelon.Repository.DataBaseInitializer.InitializeDatabase(ApplicationContext context) in C:\Dev\Rockmelon\Rockmelon.Repository\DataBaseInitializer.cs:line 12
+   at Rockmelon.Repository.Repository`1..ctor() in C:\Dev\Rockmelon\Rockmelon.Repository\Repository.cs:line 16
+   at DynamicInjectorc44fe0516322455d8c74b3d7e5be78bc(Object[] )
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context) in c:\Projects\Ninject\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 97
+   at Ninject.Activation.Context.Resolve() in c:\Projects\Ninject\ninject\src\Ninject\Activation\Context.cs:line 157
+   at Ninject.KernelBase.&lt;&gt;c__DisplayClass10.&lt;Resolve&gt;b__c(IBinding binding) in c:\Projects\Ninject\ninject\src\Ninject\KernelBase.cs:line 386
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Ninject.Planning.Targets.Target`1.GetValue(Type service, IContext parent) in c:\Projects\Ninject\ninject\src\Ninject\Planning\Targets\Target.cs:line 197
+   at Ninject.Planning.Targets.Target`1.ResolveWithin(IContext parent) in c:\Projects\Ninject\ninject\src\Ninject\Planning\Targets\Target.cs:line 165
+   at Ninject.Activation.Providers.StandardProvider.GetValue(IContext context, ITarget target) in c:\Projects\Ninject\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 114
+   at Ninject.Activation.Providers.StandardProvider.&lt;&gt;c__DisplayClass4.&lt;Create&gt;b__2(ITarget target) in c:\Projects\Ninject\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context) in c:\Projects\Ninject\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at Ninject.Activation.Context.Resolve() in c:\Projects\Ninject\ninject\src\Ninject\Activation\Context.cs:line 157
+   at Ninject.KernelBase.&lt;&gt;c__DisplayClass10.&lt;Resolve&gt;b__c(IBinding binding) in c:\Projects\Ninject\ninject\src\Ninject\KernelBase.cs:line 386
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.&lt;CastIterator&gt;d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters) in c:\Projects\Ninject\ninject\src\Ninject\Syntax\ResolutionExtensions.cs:line 37
+   at Rockmelon.Factory.Get[T]() in C:\Dev\Rockmelon\Rockmelon.Factory\Factory.cs:line 55
+   at Rockmelon.Engine.Tests.UnitTest1.TestMethod1() in C:\Dev\Rockmelon\Rockmelon.Engine.Tests\UnitTest1.cs:line 31
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

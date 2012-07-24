@@ -1,0 +1,53 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server Compact Edition
+-- --------------------------------------------------
+-- Date Created: 07/15/2012 21:28:49
+-- Generated from EDMX file: C:\Dev\Rockmelon\Rockmelon.Domain\Rockmelon.edmx
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- NOTE: if the constraint does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- NOTE: if the table does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    DROP TABLE [Person];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'Person'
+CREATE TABLE [Person] (
+    [GameId] int IDENTITY(1,1) NOT NULL,
+    [Description] nvarchar(4000)  NULL,
+    [Rating] smallint  NULL,
+    [Title] nvarchar(4000)  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [GameId] in table 'Person'
+ALTER TABLE [Person]
+ADD CONSTRAINT [PK_Person]
+    PRIMARY KEY ([GameId] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------
