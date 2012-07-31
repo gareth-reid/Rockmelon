@@ -194,12 +194,19 @@
       <Project>{E3C766EA-CBF0-4C6D-9912-6862880C029D}</Project>
       <Name>Rockmelon.Factory</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Rockmelon.Helpers\Rockmelon.Helpers.csproj">
+      <Project>{BC2977D9-B241-4014-AB9A-67F6B2FF03D8}</Project>
+      <Name>Rockmelon.Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Game\Detail.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OldList.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -216,16 +223,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1398</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Rockmelon.Site</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

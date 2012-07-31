@@ -1,0 +1,5 @@
+﻿
+_ReSharper.*/*
+*/obj/*
+*/obj/*/*
+Rockmelon.*/*/*/Rockmelon.*.dll

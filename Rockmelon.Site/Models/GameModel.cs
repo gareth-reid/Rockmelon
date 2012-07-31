@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Rockmelon.Helpers;
 
 namespace Rockmelon.Site.Game.Models
 {
@@ -9,8 +10,9 @@ namespace Rockmelon.Site.Game.Models
     {
         public GameModel()
         {
-            Games = new List<Domain.Game>();
+            Games = new GridItems<Rockmelon.Domain.Game>();
         }
-        public IEnumerable<Rockmelon.Domain.Game> Games { get; set; }
+
+        public GridItems<Rockmelon.Domain.Game> Games;
     }
 }

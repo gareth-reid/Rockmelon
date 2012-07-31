@@ -1,8 +1,0 @@
-C:\GarDev\Rockmelon\Rockmelon.Domain\bin\Release\Rockmelon.Domain.dll.config
-C:\GarDev\Rockmelon\Rockmelon.Domain\bin\Release\Rockmelon.Domain.dll
-C:\GarDev\Rockmelon\Rockmelon.Domain\bin\Release\Rockmelon.Domain.pdb
-C:\GarDev\Rockmelon\Rockmelon.Domain\bin\Release\EntityFramework.dll
-C:\GarDev\Rockmelon\Rockmelon.Domain\bin\Release\EntityFramework.xml
-C:\GarDev\Rockmelon\Rockmelon.Domain\obj\Release\ResolveAssemblyReference.cache
-C:\GarDev\Rockmelon\Rockmelon.Domain\obj\Release\Rockmelon.Domain.dll
-C:\GarDev\Rockmelon\Rockmelon.Domain\obj\Release\Rockmelon.Domain.pdb

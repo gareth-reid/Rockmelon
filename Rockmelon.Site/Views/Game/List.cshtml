@@ -1,28 +1,11 @@
 ﻿@using Rockmelon.Domain
+@using Rockmelon.Helpers
 @model Rockmelon.Site.Game.Models.GameModel
 
 <div class="main">
     <h1> Xbox Review </h1>
+     @Html.Raw(Html.Grid("games-table", Model.Games))
     
-    <table id="games-table" class="tablesorter">
-        <thead>
-            <tr><th>Click a header to sort</th></tr>
-            <tr>
-                <th>Title</th><th>Description</th><th>Rating</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var g in Model.Games)
-            {
-                <tr class="r@((g.GameId % 2) + 1)">
-                    <td class="title">@g.Title</td>
-                    <td>@g.Description &nbsp &nbsp<a class="edit" href="#" onClick="EditGame(@g.GameId);">Edit</a></td>
-                    <td>@Html.Hidden(g.TotalRating().ToString())<img src="Content/images/@(g.TotalRating())star.png"/>
-                        &nbsp &nbsp<a class="rate" href="#" onClick="EditGame(@g.GameId);">Rate it!</a></td>
-                </tr>
-            }
-        </tbody>
-    </table>
 </div>
 <div id="detail-popup" style="display:none;">
 </div>

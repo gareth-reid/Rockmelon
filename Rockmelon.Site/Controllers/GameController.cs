@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Rockmelon.Business;
 using Rockmelon.Domain;
+using Rockmelon.Helpers;
 using Rockmelon.Site.Game.Models;
 
 namespace Rockmelon.Site.Game.Controllers
@@ -42,8 +44,26 @@ namespace Rockmelon.Site.Game.Controllers
         public GameModel BuildModel()
         {
             var model = new GameModel();
-            model.Games = _GameManager.ListGames(new GameCriteria());
+            var games = _GameManager.ListGames(new GameCriteria());
+            model.Games = ToList(games);
             return model;
+        }
+
+        public GridItems<Rockmelon.Domain.Game> ToList(IEnumerable<Rockmelon.Domain.Game> games)
+        {
+            var grid = new GridItems<Rockmelon.Domain.Game>();
+            grid.PrimaryKey = new Func<Rockmelon.Domain.Game, int>(g => g.GameId);
+            grid.Columns = new List<Func<Rockmelon.Domain.Game, object>>()
+                               {
+                                   new Func<Rockmelon.Domain.Game, object>(g => g.Title),
+                                   new Func<Rockmelon.Domain.Game, object>(g => g.Description),
+                                   new Func<Rockmelon.Domain.Game, object>(g => g.TotalRating())
+                               };
+            foreach (var game in games)
+            {
+                grid.Items.Add(game);
+            }
+            return grid;
         }
     }
 }

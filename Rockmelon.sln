@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rockmelon.Factory", "Rockme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rockmelon.Business", "Rockmelon.Business\Rockmelon.Business.csproj", "{4656A4E1-7E1F-488A-9D62-8AE4E399A138}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rockmelon.Helpers", "Rockmelon.Helpers\Rockmelon.Helpers.csproj", "{BC2977D9-B241-4014-AB9A-67F6B2FF03D8}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Rockmelon.vsmdi
@@ -62,6 +64,10 @@ Global
 		{4656A4E1-7E1F-488A-9D62-8AE4E399A138}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4656A4E1-7E1F-488A-9D62-8AE4E399A138}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4656A4E1-7E1F-488A-9D62-8AE4E399A138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2977D9-B241-4014-AB9A-67F6B2FF03D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2977D9-B241-4014-AB9A-67F6B2FF03D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2977D9-B241-4014-AB9A-67F6B2FF03D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2977D9-B241-4014-AB9A-67F6B2FF03D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
